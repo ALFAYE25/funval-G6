@@ -1,0 +1,27 @@
+/*h1 {
+    escribo todos los estilos para el h1
+}
+    .supertitulo {
+    escribo todos los estilos para los elementos con clase supertitulo
+    p
+*/
+#titulo-principal {
+    color: white
+
+}
+body {
+    background-color: blue;
+
+}
+#servicios {
+    color: white
+}
+#valores {
+    background-color: chartreuse;
+}
+#listado {
+    font: 300;
+    color: cyan;
+    
+
+}
