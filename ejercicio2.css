@@ -1,0 +1,90 @@
+#titulo-inicial{
+    text-align: center;
+    font-size: 70px;   
+    color:white
+    
+}
+
+    body{
+        background-color: dodgerblue;
+}
+.foto-perfil{
+   
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 50%;
+
+}
+#acerca-de{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+
+#biografia {
+font-size: 30px;
+
+
+
+}
+
+#habilidades {
+    font-size: 60px;
+    color: white;
+
+}
+.lista-habilidades {
+
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+
+#redes{
+font-size: 60px;
+color: white;
+}
+
+#contacto {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.lista-redes {
+    font-size: 30px;
+    padding-left: 20px;
+
+}
+    .lista-redes li {
+margin-bottom: 20px;
+
+    }
+    
+
+
+
+
+    .despedida{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    
+}
+
+
+#final {
+
+    font-size: 60px;
+    
+}
+
+#subtitulo{
+
+    font-size: 50px;
+    color: white;
+}
