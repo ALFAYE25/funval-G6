@@ -1,0 +1,135 @@
+/*configuración etilos globales de la página */
+
+body{
+background-color: #0f0f0f; /*aquí se configura el fondo del cuerpo de la página*/
+color: #fff; /* Esta acción es para la configuración de la letra */
+font-family: Arial, Helvetica, sans-serif; /*Aquí se está especificando el tipo de letra o una lista de fuentes alternativas para un elemento de texto. Se separan en comas en orden de preferencia */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /*Aquí se configura la altura en la página */
+margin: 0; /* Este valor configura el margen en la página */
+
+}
+/* Aquí va la configuración del primer contenedor */
+
+.logo-1 {      /* aquí se llama al primer contenedor. Es imporante definir bien el nombre para que pueda enlazarse sin inconvenientes */
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    width: 360px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* esta función de box shadow sirve para añadir una o más sombras a algún elemento, 
+    se da un efecto de profundidad y realismo visual. Los valores son para controlar el desplazamiento horizontal y vertical del asobra, nivel de nitidez, radio de propagación y su color.
+    */
+}
+
+/* aquí se va a centrar el logo */
+.logo-1 {
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+/* Redes sociale */
+.redes-login{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.redes-login a { /*La letra <a> se refiere a que el estilo no se aplica a todo el bloque de redes-login sino que se aplica a los enlaces que contiene  */
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+border-radius: 5px;
+background-color: #2a2a2a;
+text-decoration: none;
+
+}
+
+.redes-login img {
+
+    width: 24px;
+    height: 24px;
+}
+
+/* Colores oficiales */
+
+.facebook { background-color: #1877f2; }     /* Azul Facebook */
+.epicgamesoficial { background-color: #1d3c80;}       /* azulc games */
+.playstation { background-color: #003087; }  /* Azul PlayStation */
+.xbox { background-color: #107c10; }         /* Verde Xbox */
+.nintendo { background-color:   #e60012; }   /* Rojo de nintendo*/
+
+/* Aquí se da estilo a los campos del formulario*/
+
+form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+select, input {
+    background-color: #2a2a2a;
+    border: none;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 5px; /* Esta propiedad sirve para redondear las esquinas de un elemento */
+    color: #fff;
+    font-size: 14px;
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+/*Los checkbox*/
+.noticias {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 12px;
+    color: #bbb
+}
+.noticias {
+    /*rgin-right: 10px*/
+    display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.terminos a {
+    color: #00aaff;
+text-decoration: none; /*hace que resalte el texto de los terminos en el formulario */
+
+}
+
+/*botones */
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover { /*esta es una pseudoclase que siver para aplicar estilos a un elemento, en este caso el botón */
+background-color: #222;
+
+
+}
+
+/* pie de página */
+
+.footer {
+    color: #00aaff;
+    text-decoration: none;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practica 2.css"> <!-- aquí se debe colocar el archivo styles para vincularlo. Esto es importante para que los cambios se reflejen-->
+    <title>Registrate en Epic Games</title> <!-- aquí va el título que aparece en nuestra pestaña en el navegador web-->
+    
+</head>
+<body>
+    <div class="logo-1"> <!--Aquí se declara el primer contenedor del logo que va en el inicio del formulario-->
+        <div class="logo-epic"> <!-- En esta línea se declara la clase para el primer logo-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Epic_Games_logo.svg" alt="Epic Games" width="80"> <!--Aquí se declara el enlace de donde se está tomando la imagen-->
+
+    </div>
+
+<!--Aquí se van a configurar los botones de las redes sociales-->
+<div class="redes-login"> <!--se declara la clase de los botones que redirigen a las redes sociales-->
+    <a href="https://www.facebook.com/epicgames/?locale=es_LA" class="facebook" target="_blank"> <!--Se está mencionando el enlace hacia donde nos dirigirá el botón y que se abra en una pestaña nueva en el navegador-->
+        <img src= "https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a> <!--Aquí se está dando el enlace hacia la imagen que aparece en nuestro formulario. El enlace es de la página web o bien se puede subir a nuestra carpeta donde se almacenen las imagenes-->
+
+<a href="https://www.epicgames.com/site/es-ES/home" class="epicgamesoficial" target="_blank">
+ <img src= "https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/epicgamesteaser.png" alt="epicgames"></a>
+
+<a href="https://www.playstation.com/es-mx/" class="playstation" target="_blank">
+ <img src= "https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg" alt="playstation"></a>
+
+
+<a href="https://www.xbox.com/es-MX" class="xbox" target="_blank">
+ <img src= "https://assets.xboxservices.com/assets/bb/df/bbdfd5f1-37b1-4117-89eb-434e1cdfd7cf.svg?n=03958693_App-Icon-0_120x120.svg" alt="Xbox"></a>
+
+<a href="https://www.nintendo.com/es-mx/?gad_source=1" class="nintendo" target="_blank">
+ <img src= "https://images.seeklogo.com/logo-png/29/1/nintendo-switch-logo-png_seeklogo-291375.png" alt="Nintendo Switch"></a>
+
+</div>
+
+
+<!--En este apartado se va a configurar el formulario-->
+<form>
+<select> <!--En este apartado se colocan las opciones que se desean aparezcan en el formulario-->
+
+        <option>Selecciona tú país</option>    
+        <option>Argentina</option>
+        <option>México</option>
+        <option>Perú</option>
+        <option>Colombia</option>
+        <option>Guatemala</option>
+      </select>
+      <input type="text" placeholder="*Nombre"> <!--El asterisco se refiere a que es un campo obligatorio-->
+      <input type="text" placeholder="*Apellidos">
+      <input type="text" placeholder="*Nombre de usuario">
+      <input type="email" placeholder="*Dirección de correo electrónico">
+      <input type="password" placeholder="*Contraseña">
+
+<!--En este apartado se configuran los checkbox de los términos y condiciones así como el de los newsletters-->
+      <label class="noticias">
+        <input type="checkbox" > Me gustaría recibir noticias, encuestas y ofertas especiales de Epic Games.
+      </label>
+
+      <label class="terminos">
+        <input type="checkbox"> He leído y acepto los <a href="#">términos de servicio</a> <!--Se coloca signo de número porque no se tiene un enlace para los términos-->
+      </label>
+
+      <button type="submit" class="btn">CREAR CUENTA</button>
+    </form>
+
+    <!--En este apartado se configura el pie de página para que aparezcan los últimos títulos relacionados a politica de privacidad y si se tiene una cuenta en epic-->
+<div class="footer">
+      <p><a href="#">Política de privacidad</a></p> <!--Se colocó el signo de número debido a que no se cuenta con enlace para dirigir a la politica-->
+      <p>¿Tienes una cuenta de Epic Games? <a href="#">Iniciar sesión</a></p> <!--Se coloca signo de número porque no se tiene un enlace para iniciar sesión-->
+    </div>
+  </div>
+</body>
+</html>
