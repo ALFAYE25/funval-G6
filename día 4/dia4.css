@@ -1,0 +1,34 @@
+body { 
+    height: 100vh;
+    color: white
+}
+
+.cabecera {
+    background-color: red;
+    height: 10%;
+    color: white;
+}
+.navegador {
+    background-color: blue;
+    height: 10%;
+    color: white;
+}
+.contenedor {
+    height: 70%;
+    display: flex;
+    
+}
+.lateral {
+    background-color: blueviolet;
+    width: 30%;
+    
+}
+.principal {
+    background-color: brown;
+    width: 70%;
+}
+.pie {
+    background-color: darkblue;
+    height: 10%;
+   
+}

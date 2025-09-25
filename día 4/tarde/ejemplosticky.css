@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0; /* Se queda pegado en la parte superior */
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    height: 2000px; /* Para que se pueda hacer scroll */
+    background: linear-gradient(#ecf0f1, #bdc3c7);
+}

@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    border: 1px dashed lightgray; /* solo para visualizar límites */
+}
+
+/* Cajas genéricas */
+.caja {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 50px;
+    min-height: 50px;
+    color: white;
+    font-size: 0.7em;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Cajas individuales con colores y posición */
+.caja1 {
+    background-color: #b22222; /* rojo ladrillo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caja3 {
+    background-color: #b22222;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caja2 {
+    background-color: #b22222;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.caja5 {
+    background-color: #b22222;
+    top: 5%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.caja4 {
+    background-color: #006400; /* verde oscuro */
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/* Línea en forma de U */
+.linea {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 20%;
+    height: 30%;
+    border: 2px solid blue;
+    border-left: none;
+    border-top: none;
+}
+
