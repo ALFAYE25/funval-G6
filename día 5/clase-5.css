@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.contenedor-padre {
+    border: 2px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.hijo {
+    border: 2px blueviolet solid;
+    height: 30px;
+    width: 50px;
+}
+

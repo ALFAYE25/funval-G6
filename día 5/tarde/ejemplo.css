@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*esta medida es conocida como sm en el mundo del desarrollo */
+    @media (min-width: 640px) {
+        background-color: blue;
+        color: cyan;
+        font-size: 70px;
+                
+    }
+}
+@media (min-width: 768px) {
+    .caja {
+        background-color: green;    
+        color: yellow;
+        font-size: 30px;
+    }
+
+    @media (min-width: 1024px) {
+        .caja {
+        background-color: purple;
+        color: pink;
+        font-size: 110px;
+    }
+
+    @media (min-width: 1280px) {
+        .caja {
+        background-color: orange;
+        color: black;
+        font-size: 130px;
+        }
+}   
+}
+}
