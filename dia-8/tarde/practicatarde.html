@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output3.css">
+        <title>Practica tarde</title>
+</head>
+<body class="bg-white p-4">
+
+  <div class="max-w-6xl mx-auto border p-2">
+
+    <!-- Header: base (xs) naranja, en sm cyan, en md verde -->
+    <header class="bg-orange-300 sm:bg-cyan-300 md:bg-green-400 text-center p-2 font-bold">
+      HEADER
+    </header>
+
+    <!-- Grid principal -->
+    <main class="grid grid-cols-1 gap-2 mt-2
+                 sm:grid-cols-2 sm:grid-rows-2
+                 md:grid-cols-3 md:grid-rows-1">
+
+      <!-- Caja 1: siempre en la primera columna -->
+      <div class="bg-red-500 text-white p-12 text-4xl font-bold
+                  sm:col-start-1 sm:row-start-1 md:col-start-1 md:row-start-1">
+        1
+      </div>
+
+      <!-- Caja 2: base azul (xs) con texto negro, en sm/md se vuelve roja con texto blanco -->
+      <div class="bg-sky-300 text-black p-12 text-4xl font-bold
+                  sm:col-start-2 sm:row-start-1 md:col-start-2 md:row-start-1
+                  sm:bg-red-500 sm:text-white md:bg-red-500 md:text-white">
+        2
+      </div>
+
+      <!-- Caja 3: en xs aparece debajo, en sm ocupa la fila 2 completa, en md va a la columna 3 -->
+      <div class="bg-red-500 text-white p-12 text-4xl font-bold
+                  sm:col-span-2 sm:row-start-2 sm:bg-green-400
+                  md:col-start-3 md:row-start-1 md:col-span-1 md:bg-red-500">
+        3
+      </div>
+
+    </main>
+
+    <!-- Footers -->
+    <div class="grid gap-2 mt-2 grid-cols-1 md:grid-cols-2">
+      <footer class="bg-yellow-300 text-center p-2 font-bold">Footer 1</footer>
+      <footer class="bg-yellow-300 text-center p-2 font-bold">Footer 2</footer>
+    </div>
+
+  </div>
+
+</body>
+</html>
