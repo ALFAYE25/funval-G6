@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" id="todo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body class="">
+    <!-- HEADER -->
+    <header
+      class="h-24 bg-yellow-800 text-white flex items-center justify-between dark:bg-slate-900 py-2 px-4"
+    >
+      <label
+        class="relative inline-flex items-center cursor-pointer scale-[60%]"
+      >
+        <input class="sr-only peer" type="checkbox" id="btn-dark" />
+        <div
+          class="w-20 h-10 rounded-full bg-gradient-to-r from-yellow-300 to-orange-400 peer-checked:from-blue-400 peer-checked:to-indigo-500 transition-all duration-500 after:content-['☀️'] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-8 after:w-8 after:flex after:items-center after:justify-center after:transition-all after:duration-500 peer-checked:after:translate-x-10 peer-checked:after:content-['🌙'] peer-checked:after:bg-slate-900 after:shadow-md after:text-lg"
+        ></div>
+      </label>
+      <img src="./img/logo1.png" alt="" class="h-full" />
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex flex-col md:flex-row-reverse">
+      <div
+        class="flex flex-col p-4 bg-orange-300 dark:bg-slate-500 dark:text-white md:w-[80%] md:h-full lg:w-[70%]"
+      >
+        <div class="flex items-center justify-around w-full">
+          <!-- Buscador -->
+          <div
+            class="bg-white flex items-center justify-center border border-gray-400 w-56 rounded-2xl"
+          >
+            <input type="text" class="w-[80%] outline-none" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <!-- Select -->
+          <select name="" id="" class="bg-white px-2 border border-gray-400">
+            <option value="">terror</option>
+            <option value="">novelas ligeras</option>
+            <option value="">comics</option>
+            <option value="">ciencia ficcion</option>
+          </select>
+        </div>
+
+        <!-- CARDS -->
+        <div
+          class="cards-container w-full px-8 grid grid-cols-1 place-items-center py-4 gap-4 sm:grid-cols-2"
+        >
+          <!-- Tarjeta 1 -->
+          <div
+            class="card w-full bg-[#fff5e8] text-gray-800 rounded-2xl shadow-lg p-4 flex flex-col items-center dark:bg-[#003d75] dark:text-[#ffffff]"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/81iqZ2HHD-L._AC_UF1000,1000_QL80_.jpg"
+              alt="imagen del libro"
+              class="w-full object-contain h-96"
+            />
+            <h2 class="mt-4 text-lg font-bold text-center">
+              Harry Potter y la Piedra Filosofal
+            </h2>
+            <div
+              class="mt-4 border-t border-b border-gray-700 grid grid-cols-3 text-center py-3 text-sm text-gray-600 gap-5 dark:text-[#d3d3d3] dark:border-white"
+            >
+              <div>
+                <p class="font-bold">GÉNERO</p>
+                <p>Fantasía</p>
+              </div>
+              <div>
+                <p class="font-bold">AUTOR</p>
+                <p>J. K. Rowling</p>
+              </div>
+              <div>
+                <p class="font-bold">AÑO</p>
+                <p>1997</p>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 items-center justify-between px-4 py-3"
+            >
+              <span
+                class="text-2xl font-bold text-[#1b1b1b] dark:text-[#ffffff]"
+                >$20.00</span
+              >
+              <button
+                class="flex items-center gap-1 border border-gray-400 px-4 py-2 rounded-lg bg-white text-gray-800 hover:bg-[#5f361a] hover:text-white transition-colors duration-300 dark:hover:bg-[#031a2e]"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="card w-full bg-[#fff5e8] text-gray-800 rounded-2xl shadow-lg p-4 flex flex-col items-center dark:bg-[#003d75] dark:text-[#ffffff]"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/81lAPl9Fl0L._AC_UF1000,1000_QL80_.jpg"
+              alt="imagen del libro"
+              class="w-full object-contain h-96"
+            />
+            <h2 class="mt-4 text-lg font-bold text-center">
+              Harry Potter y la Cámara Secreta
+            </h2>
+            <div
+              class="mt-4 border-t border-b border-gray-700 grid grid-cols-3 text-center py-3 text-sm text-gray-600 gap-5 dark:text-[#d3d3d3] dark:border-white"
+            >
+              <div>
+                <p class="font-bold">GÉNERO</p>
+                <p>Fantasía</p>
+              </div>
+              <div>
+                <p class="font-bold">AUTOR</p>
+                <p>J. K. Rowling</p>
+              </div>
+              <div>
+                <p class="font-bold">AÑO</p>
+                <p>2002</p>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 items-center justify-between px-4 py-3"
+            >
+              <span
+                class="text-2xl font-bold text-[#1b1b1b] dark:text-[#ffffff]"
+                >$20.00</span
+              >
+              <button
+                class="flex items-center gap-1 border border-gray-400 px-4 py-2 rounded-lg bg-white text-gray-800 hover:bg-[#5f361a] hover:text-white transition-colors duration-300 dark:hover:bg-[#031a2e]"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="h-[20%] sm:flex md:flex-col md:h-full md:w-[20%] lg:w-[30%]">
+        <div
+          class="h-[50%] bg-blue-900 text-white dark:bg-slate-800 sm:h-full sm:w-[30%] md:w-full"
+        >
+          CAJA 2
+        </div>
+        <div
+          class="h-[50%] bg-pink-500 dark:bg-slate-700 dark:text-white sm:h-full sm:w-[70%] md:w-full"
+        >
+          CAJA 3
+        </div>
+      </div>
+    </main>
+
+    <!-- SECCIÓN CATEGORÍAS -->
+    <section class="w-full py-8 bg-gray-100 dark:bg-slate-800">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-900 dark:text-white">
+        Categorías
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 px-6">
+        <!-- Terror -->
+        <div class="relative group overflow-hidden rounded-xl shadow-lg">
+          <img
+            src="https://media.istockphoto.com/id/1329876513/es/foto/cr%C3%A1neo.jpg?s=612x612&w=0&k=20&c=DWrizku9kAB7SLLJ6f3OiJJX4Be0D_47z1WqFCFkvBg="
+            alt="Terror"
+            class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <span class="text-white text-xl font-bold">Terror</span>
+          </div>
+        </div>
+
+        <!-- Fantasía -->
+        <div class="relative group overflow-hidden rounded-xl shadow-lg">
+          <img
+            src="https://img.freepik.com/vector-gratis/libro-abierto-historia-aventuras-hadas-leer-nino_107791-21143.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Fantasía"
+            class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <span class="text-white text-xl font-bold">Fantasía</span>
+          </div>
+        </div>
+
+        <!-- Cómics -->
+        <div class="relative group overflow-hidden rounded-xl shadow-lg">
+          <img
+            src="https://www.aprendemas.com/mx/blog/images/2022/01/comic-1.jpg"
+            alt="Cómics"
+            class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <span class="text-white text-xl font-bold">Cómics</span>
+          </div>
+        </div>
+
+        <!-- Ciencia Ficción -->
+        <div class="relative group overflow-hidden rounded-xl shadow-lg">
+          <img
+            src="https://media.istockphoto.com/id/1277822133/es/foto/naves-de-batalla-de-ciencia-ficci%C3%B3n-futuristas-hover-sobre-un-planeta-alien%C3%ADgena.jpg?s=612x612&w=0&k=20&c=DtGDNX0gS0DeG7l8nRrRpQPMVm_3CeQsywCBXFR-YZM="
+            alt="Ciencia Ficción"
+            class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <span class="text-white text-xl font-bold">Ciencia Ficción</span>
+          </div>
+        </div>
+
+        <!-- Novelas Ligeras -->
+        <div class="relative group overflow-hidden rounded-xl shadow-lg">
+          <img
+            src="https://i.ytimg.com/vi/654ZzJMF-Bs/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYACzgWKAgwIABABGCwgWChyMA8=&rs=AOn4CLAlPOLeVYDL8fiInA6LEOVQ8NPe9g
+            alt="Novelas Ligeras"
+            class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <span class="text-white text-xl font-bold">Novelas Ligeras</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="h-[10%] bg-purple-400 dark:bg-slate-950 dark:text-white">
+      FOOTER
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+      let botoncito = document.querySelector("#btn-dark");
+      let todo = document.querySelector("#todo");
+      botoncito.addEventListener("click", function () {
+        todo.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
+
+
+
