@@ -72,12 +72,12 @@ for (let i = 1; i <= n; i++) {
     console.log(i * 2);
 }*/
 
-let num = parseInt(prompt("Ingresa un número para calcular su factorial"));
+// let num = parseInt(prompt("Ingresa un número para calcular su factorial"));
 
-let factorial = 1
+// let factorial = 1
 
-for (let i = 1; i <= num; i++) {
+// for (let i = 1; i <= num; i++) {
 
-    console.log(num + "! = " + factorial);
+//     console.log(num + "! = " + factorial);
 
-}
+// }
