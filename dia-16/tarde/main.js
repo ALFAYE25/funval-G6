@@ -75,42 +75,76 @@
 // let contador = 0;
 
 // for (let word of words) {
-//     if (word.length > 4) {
+//      if (word.length > 4) {
 //         contador++;
+//      }
+//  }
+//  console.log("Cantidad de palaras con más de 4 letras:", contador);
+
+
+
+
+// // 13. Crea un array con nombres y verifica si existe un nombre específico recorriéndolo.
+// nombres = ["Kevin", "Mario", "Hugo", "Hernan", "Ramiro"];
+// let pepe = false;
+// for (let i = 0; i < nombres.length; i++) {
+//     if (nombres[i] === "kevin") {
+//         pepe = true;
 //     }
 // }
-// console.log("Cantidad de palaras con más de 4 letras:", contador);
-
-
-
-
-// 13. Crea un array con nombres y verifica si existe un nombre específico recorriéndolo.
-nombres = ["Kevin", "Mario", "Hugo", "Hernan", "Ramiro"];
-let pepe = false;
-for (let i = 0; i < nombres.length; i++) {
-    if (nombres[i] === "kevin") {
-        pepe = true;
-    }
-}
-if (pepe)
+// if (pepe)
 
 
 
 
 // 14. Crea un array con edades y muestra solo las edades mayores a 18.
 
-let años = [12, 25, 17, 30, 15, 22, 18, 40];
+// let años = [12, 25, 17, 30, 15, 22, 18, 40];
 
-for (let i = 0; i < años.length; i++) {
-    if (años[i] > 18) {
-        console.log(años[i]);
-    }
-}
+// for (let i = 0; i < años.length; i++) {
+//     if (años[i] > 18) {
+//         console.log(años[i]);
+//     }
+// }
 
 // 15. Crea un array de números y crea un nuevo array con el triple de cada número.
 // 16. Crea un array de precios y calcula el total sumando todos sus elementos.
 // 17. Crea un array de 10 números y cuenta cuántos son pares.
+let arrayNum = [180, 200, 300, 950, 500, 20, 30, 65, 88, 90]
+let contNum = 0, contimp = 0;
+
+
+for (let i = 0; i < arrayNum.length; i++) {
+    if(arrayNum[i]%2==0){
+        contNum++
+    }else {
+        contimp++;
+    }
+}
+console.log(`Existen ${contNum} Números pares
+    Existen ${contimp} Números impares`); 
+
+
 // 18. Crea un array con nombres y agrega uno nuevo solo si no está repetido.
+
+let nomb = ["Alfredo", "Carlos", "Cesar", "Alberto", "Itzeel"];
+let nuevoNom = prompt("Ingresa nuevo nombre: ").toLocaleLowerCase();
+let existe = false;
+
+console.log(nomb);
+
+for (let i = 0; i < nomb.length; i++) {
+    if (nomb[i].toLocaleLowerCase() == nuevoNom){
+        existe = true;
+    }
+}
+
+if (existe) {
+    console.log("Ya existe el nombre");
+}else {
+    nomb.push(nuevoNom);
+    console.log(nomb);
+}
 // 19. Crea un array con números y muestra cuál es el mayor (sin usar Math.max).
 // 20. Crea un array con números y muestra cuál es el menor (sin usar Math.min).
 // 21. Crea un array con nombres y elimina el último elemento si hay más de 5 elementos.
@@ -123,3 +157,28 @@ for (let i = 0; i < años.length; i++) {
 // 28. Crea un array de frutas y cambia el valor de la segunda fruta por otra nueva.
 // 29. Crea un array con 5 números y muestra solo los que estén en posiciones pares.
 // 30. Crea un array con nombres y forma una cadena con todos los nombres separados por coma.
+
+
+// // 4. Crea un array con números y elimina los números repetidos dejando solo uno de cada valor (sin usar Set).
+// let cantidad = [2, 5 , 3, 2, 8, 5, 9, 10, 3, 8];
+
+// let noRepetidos = [];
+
+// for (let i = 0; i < cantidad.length; i++) {
+//     let repetido = false;
+
+// for (let j = 0; j < noRepetidos.length; j++) {
+//     if (cantidad[i] === noRepetidos [j]) {
+//         repetido = true;
+//         break;
+//     }
+// }
+// if (!repetido) {
+//     noRepetidos.push(cantidad[i]);
+
+// }
+
+
+
+// }
+// console.log ("No repetidos:", noRepetidos);
