@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 to-blue-600 text-white font-sans">
+<section class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 w-[340px]">
+    <h2 class="text-2xl font-bold text-center mb-6 text-blue-200">Casa de Cambio Global</h2>
+
+    <form id="formCambio" class="flex flex-col gap-4">
+      <div>
+        <label for="nombre" class="block mb-1 text-sm">Nombre del cliente</label>
+        <input id="nombre" type="text" class="w-full p-2 rounded-md text-white" placeholder="Escribe tu nombre">
+      </div>
+
+<div class="flex gap-3">
+  <div class="flex-1">
+    <label for="origen" class="block mb-1 text-sm">País</label>
+    <select id="origen" class="w-full p-2 rounded-md text-black">
+
+      <option value="">--</option>
+      <option value="peru">Perú</option>
+      <option value="chile">Chile</option>
+      <option value="argentina">Argentina</option>
+      <option value="mexico">México</option>
+
+    </select>
+  </div>
+
+  <div class="flex-1">
+<label for="destino" class="block mb-1 text-sm"> País destino</label>
+<select id="destino" class="w-full p-2 rounded-md text-black">
+<option value="">--</option>
+      <option value="peru">Perú</option>
+      <option value="chile">Chile</option>
+      <option value="argentina">Argentina</option>
+      <option value="mexico">México</option>
+
+</select>
+</div>
+</div>
+
+
+<div>
+      <label for="cantidad" class="block mb-1 text-sm">Cantidad a cambiar</label>
+      <input id="cantidad" type="number" class="w-full p-2 rounded-md text-white" placeholder="Ej. 1500">
+</div>
+
+<button class="mt-4 bg-blue-500 hover:bg-blue-400 transition rounded-md py-2 font-semibold text-white">
+  Calcula aquí<nav></nav>
+</button>
+</form>
+</section>
+
+<div id="resultado" class="mt-6 text-center text-lg font-semibold"></div>
+
+  <!-- /*<h2 id="mensaje" class="text-2xl font-bold text-green-800">
+    La princesa más hermosa
+  </h2>
+
+  <img 
+    id="fiona" 
+    src="https://upload.wikimedia.org/wikipedia/en/d/d0/Fiona_standing_human.png"
+    alt="Fiona"
+    class="w-64 rounded-2xl shadow-lg transition-all duration-500"
+  >
+
+  <button 
+    id="boton" 
+    class="bg-green-700 text-white px-6 py-3 rounded-xl hover:bg-green-800 transition">
+    De dia soy una
+  </button> */ -->
+
+</body>
+</html>
