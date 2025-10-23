@@ -101,7 +101,7 @@ function mostrar(id, contenido) {
 /* ------------------ 1. Promesa de productos ------------------ */
 const getProductos = new Promise((resolve, reject) => {
   setTimeout(() => {
-    const conexion = true;
+    const conexion = false;
     if (conexion) {
       const productos = [
         { id: 1, nombre: "Laptop", precio: 1200 },
@@ -115,16 +115,36 @@ const getProductos = new Promise((resolve, reject) => {
   }, 1000);
 });
 
-getProductos
-  .then((productos) => {
-    let html = "<h2>Productos</h2><ul>";
-    productos.forEach(p => html += `<li>${p.nombre} - $${p.precio}</li>`);
-    html += "</ul>";
-    mostrar("productos", html);
-  })
-  .catch((error) => {
-    mostrar("productos", `<h2>Error en productos</h2><p>${error}</p>`);
-  });
+// getProductos
+//   .then((productos) => {
+//     let html = "<h2>Productos</h2><ul>";
+//     productos.forEach(p => html += `<li>${p.nombre} - $${p.precio}</li>`);
+//     html += "</ul>";
+//     mostrar("productos", html);
+//   })
+//   .catch((error) => {
+//     mostrar("productos", `<h2>Error en productos</h2><p>${error}</p>`);
+//   });
+
+
+/* ----------------- APLICANDO ASYNC Y AWAIT -----------------------*/
+
+async function mostrarProductos() {
+    try {
+        const productos = await getProductos;
+        let html = "<h2>Productos</h2><ul>";
+        productos.forEach(p => {
+            html += `<li>${p.nombre} - $${p.precio}</li>`;
+        });
+        html += "</ul>";
+        mostrar("productos", html);
+    } catch (error) {
+        mostrar("productos", `<h2>Error en productos</h2><p>${error}</p>`);
+    }
+    
+}
+mostrarProductos();
+
 
 /* ------------------ 2. Promesa de notas ------------------ */
 const getNotas = new Promise((resolve, reject) => {
@@ -160,7 +180,7 @@ getNotas
 /* ------------------ 3. Promesa que puede fallar ------------------ */
 const getUsuarios = new Promise((resolve, reject) => {
   setTimeout(() => {
-    const exito = true;
+    const exito = false;
     if (exito) {
       resolve([
         { id: 1, nombre: "Kevin" },
@@ -173,16 +193,35 @@ const getUsuarios = new Promise((resolve, reject) => {
   }, 1200);
 });
 
-getUsuarios
-  .then((usuarios) => {
+// getUsuarios
+//   .then((usuarios) => {
+//     let html = "<h2>Usuarios</h2><ul>";
+//     usuarios.forEach(u => html += `<li>${u.nombre}</li>`);
+//     html += "</ul>";
+//     mostrar("usuarios", html);
+//   })
+//   .catch((error) => {
+//     mostrar("usuarios", `<h2>Error en usuarios</h2><p>${error}</p>`);
+//   });
+
+
+/* ----------------- APLICANDO ASYNC Y AWAIT -----------------------*/
+
+async function mostrarUsuarios() {
+  try {
+    const usuarios = await getUsuarios;
     let html = "<h2>Usuarios</h2><ul>";
-    usuarios.forEach(u => html += `<li>${u.nombre}</li>`);
+    usuarios.forEach(u => {
+      html += `<li>${u.nombre}</li>`;
+    });
     html += "</ul>";
     mostrar("usuarios", html);
-  })
-  .catch((error) => {
+  } catch (error) {
     mostrar("usuarios", `<h2>Error en usuarios</h2><p>${error}</p>`);
-  });
+  }
+}
+mostrarUsuarios();
+
 
 /* ------------------ 4. Promesa de cursos ------------------ */
 const getCursos = new Promise((resolve, reject) => {
