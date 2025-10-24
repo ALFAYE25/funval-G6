@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col justify-center items-center p-6 transition-colors duration-300">
+
+  <!-- ENCABEZADO -->
+  <header class="text-center mb-6 w-full max-w-5xl flex justify-between items-center">
+    <div>
+      <h1 class="text-3xl font-bold text-indigo-700 dark:text-indigo-400 tracking-wide mb-1">
+        💻 Catálogo de Tecnología
+      </h1>
+      <p class="text-gray-600 dark:text-gray-300 text-sm">
+        Explora nuestros productos y encuentra lo que necesitas
+      </p>
+    </div>
+
+<!-- 🌗 BOTÓN MODO OSCURO -->
+    <button id="modoBtn"
+      class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-100 hover:scale-110 transition text-2xl">
+      🌙
+    </button>
+
+  </header>
+
+  <!--CONTENIDO PRINCIPAL -->
+  <main class="w-full max-w-5xl bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 transition-colors duration-300">
+    <!-- Barra de búsqueda -->
+    <div class="mb-4">
+      <input
+        id="filtro"
+        type="text"
+        placeholder="Buscar por nombre o categoría..."
+        class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none dark:bg-gray-700 dark:text-gray-100"
+      />
+    </div>
+
+    <!-- Mensaje de error -->
+    <div id="error"
+      class="hidden text-center text-red-600 dark:text-red-400 font-semibold mb-4 p-3 border border-red-300 dark:border-red-500 rounded-lg bg-red-50 dark:bg-red-900/30">
+    </div>
+
+    <!-- Contenedor de productos -->
+    <div id="productos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="mt-8 text-gray-400 text-sm text-center dark:text-gray-500">
+    <p>
+      Hecho con tecnología por
+      <span class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline cursor-pointer">
+        <!-- Cambia aquí tu nombre -->
+        El Marshall Tech
+      </span>
+    </p>
+  </footer>
+
+
+</body>
+</html>
