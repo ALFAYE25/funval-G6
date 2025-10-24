@@ -1,4 +1,4 @@
-// 🧩 LISTA DE PRODUCTOS SIMULADA
+// LISTA DE PRODUCTOS SIMULADA
 const productos = [
   {
     id: 1,
@@ -44,7 +44,7 @@ const productos = [
   }
 ];
 
-// 🕐 PROMESA SIMULANDO PETICIÓN A UN SERVIDOR
+// PROMESA SIMULANDO PETICIÓN A UN SERVIDOR
 function obtenerProductos() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -62,7 +62,7 @@ const contenedor = document.getElementById("productos");
 const inputFiltro = document.getElementById("filtro");
 const mensajeError = document.getElementById("error");
 
-// 🧱 FUNCIONES
+// FUNCIONES
 function mostrarProductos(lista) {
   contenedor.innerHTML = "";
 
@@ -133,7 +133,7 @@ inputFiltro.addEventListener("input", (e) => {
   mostrarProductos(filtrados);
 });
 
-// 🌓 CONTROL DE MODO OSCURO
+// CONTROL DE MODO OSCURO
 const modoBtn = document.getElementById("modoBtn");
 const html = document.documentElement;
 
@@ -150,6 +150,6 @@ modoBtn.addEventListener("click", () => {
 });
 
 
-// 🚀 Iniciar catálogo al cargar
+// Iniciar catálogo al cargar
 iniciarCatalogo();
 
